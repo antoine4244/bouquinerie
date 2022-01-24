@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Le Salon de lecture propose un large choix de livres à petits prix, bouquinerie bagnères, bouquinerie bagnères-de-bigorre, bouquinerie hautes-pyrénées, bouquin">
+    <meta name="author" content="bouquinerie, le salon de lecture">
+    <title>Le Salon de Lecture - Bouquinerie - Bagnère-de-Bigorre</title>
+    <link rel="icon" type="image/ico" sizes="16x16" href="img/logo.ico">
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../css/business-casual.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+        <!--span>
+      <img title="Bouq, le logo de la bouquinerie associative" data-original-title="Tooltip" class="logoBouq" src="img/logo_bouq.jpg" />
+    </span-->
+        <span class="site-heading-upper text-primary mb-2"> Bouquinerie associative</span>
+        <span class="site-heading-lower">Le Salon de Lecture/INTRANET</span>
+    </h1>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="img-wrapper">
+                    <span>
+                        <img title="Si vous vous demandez pourquoi le site a l'air si peu fini"
+                            data-original-title="Tooltip" class="avertissement" src="img/banner.png" />
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section1">
+        <div class="container">
+            <div class="row">
+                <main class="site-wrapper">
+                    <div class="pt-table desktop-768">
+                        <div class="pt-tablecell page-home relative" style="background-image: url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+              background-position: center;
+              background-size: cover;">
+                            <div class="overlay"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                                        <div class="page-title  home text-center">
+                                            <span class="heading-page"> Divers
+                                            </span>
+                                            <p class="mt20">Réservée aux Bénévoles, cette section êrmettra d'aborder différents sujets ) propos de l'INTRANET du site</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer text-faded text-center py-2">
+        <div class="container">
+            <div id="social_network">
+                <a href="https://www.facebook.com/salondelecture" target="_blank"><img src="../img/fb_orange.png"
+                        alt="lien vers facebook" /></a>
+
+                <a href="https://www.instagram.com/?hl=fr" target="_blank"><img src="../img/insta_orange.png"
+                        alt="lien vers instagram" /></a>
+            </div>
+            <p class="m-0 small">Copyright &copy; Le Salon de lecture - La Bouquinerie 2021 </p>
+        </div>
+        <div id="back_home">
+            <a href="intranet.html" class="has-tooltip" title="retour à l'onglet intranet"
+                data-original-title="Tooltip"><img src="../img/home.png" alt="Retourner à l'accueil" /></a>
+        </div>
+        <div>
+            <a href="#top" id="cRetour" class="cInvisible" title="retour en haut de page"
+                data-original-title="Tooltip"><img src="../img/up.png" alt="Retourner en haut" /></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <!-- Script to have an up-icon when scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            window.onscroll = function (ev) {
+                document.getElementById("cRetour").className = (window.pageYOffset > 200) ? "cVisible" : "cInvisible";
+            };
+        });
+    </script>
+
+    <script>
+        jQuery(document).ready(function () {
+            var duration = 500;
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 200) {
+                    // Si un défillement de 200 pixels ou plus.
+                    // Ajoute le bouton
+                    jQuery('.cRetour').fadeIn(duration);
+                } else {
+                    // Sinon enlève le bouton
+                    jQuery('.cRetour').fadeOut(duration);
+                }
+            });
+            jQuery('.cRetour').click(function (event) {
+                // Un clic provoque le retour en haut animé.
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+        });
+    </script>
+
+</body>
+
+</html>
