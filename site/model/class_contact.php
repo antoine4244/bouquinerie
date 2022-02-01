@@ -51,7 +51,7 @@
             $nom=$this->nom_contact;
             $courriel=$this->courriel_contact;
             $message=$this->message_contact;
-            
+            $type = $this->id_type;
             try
             {
                 //requête ajout d'un contact
@@ -61,7 +61,7 @@
                 $req->execute(array(
                 'nom_contact' => $nom,
                 'courriel_contact' => $courriel,
-                'id_type' => 1,
+                'id_type' => $type,
                 'message_contact'=> $message,
                 ));
             }
@@ -72,5 +72,4 @@
             }
         }
     }
-
 ?>
